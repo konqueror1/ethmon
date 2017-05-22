@@ -76,6 +76,7 @@ var logger = log4js.getLogger();
 logger.setLevel(config.log_level ? config.log_level : 'INFO');
 
 logger.warn('app: booting');
+logger.warn('app: listening on 0.0.0.0:'+config.listen_port);
 
 // --------------- /BOOT ---------------
 
